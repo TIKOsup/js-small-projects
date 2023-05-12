@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap');
+
+/* CSS Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    --background: #fffffe;
+    --headline: #094067;
+    --paragraph: #5f6c7b;
+    --button: #3da9fc;
+    --green: #90be6d;
+    --red: #f94144;
+    --ff: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    font-family: var(--ff);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 56px;
+    letter-spacing: 3px;
+    color: var(--headline);
+}
+
+#count {
+    font-size: 120px;
+    color: var(--paragraph);
+}
+
+.menu {
+    margin-top: 2rem;
+}
+
+.btn {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    background-color: var(--background);
+    border: 3px solid var(--headline);
+    border-radius: 10px;
+    color: var(--headline);
+    padding: 5px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.menu .btn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn:hover {
+    color: var(--button);
+    border-color: var(--button);
+}
