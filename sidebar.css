@@ -44,6 +44,16 @@ body {
     right: -4rem;
     top: 1rem;
     z-index: 1;
+    transition: all 0.1s linear;
+}
+
+.sidebar-toggle:hover {
+    color: var(--button);
+    cursor: pointer;
+}
+
+.sidebar-toggle-anim {
+    transform: rotate(90deg);
 }
 
 aside {
@@ -82,7 +92,13 @@ aside {
 .links-item a {
     text-decoration: none;
     text-transform: capitalize;
-    color: var(--background)
+    color: var(--background);
+    display: block;
+    width: 100%;
+}
+
+.links-item a:hover {
+    color: var(--button);
 }
 
 /* when screen width 800px or greater */

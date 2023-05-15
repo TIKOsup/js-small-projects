@@ -3,4 +3,5 @@ const toggle = document.querySelector(".sidebar-toggle");
 
 toggle.addEventListener("click", function() {
     sidebar.classList.toggle("show-sidebar");
+    toggle.classList.toggle("sidebar-toggle-anim");
 });
