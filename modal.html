@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="shortcut icon" href="./images/dandelion.png" type="image/x-icon">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/f4d9177f7c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <section class="hero-left">
+            <h1>Modal Project</h1>
+            <button class="btn" id="modal-open-btn">open modal</button>
+        </section>
+        <section class="hero-right">
+            <img class="hero-img" src="./images/modal-dandelion.jpg" alt="Dandelion">
+        </section>
+    </main>
+    <div class="modal-overlay">
+        <div class="modal-container">
+            <section class="modal-header">
+                <button id="modal-close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </section>
+            <section class="modal-body">
+                <h2>Modal Title</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    In, dolores laboriosam? Blanditiis neque dolores officia 
+                    accusamus, odio, expedita sapiente sunt placeat, illum?</p>
+            </section>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
+</body>
+</html>
