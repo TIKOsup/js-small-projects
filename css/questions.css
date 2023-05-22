@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap');
+
+/* CSS Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    --white: #fffffe;
+    --light-gray: #f1f5f8;
+    --headline: #094067;
+    --paragraph: #5f6c7b;
+    --button: #3da9fc;
+    --ff: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: var(--light-gray);
+    font-family: var(--ff);
+}
+
+/* main */
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qs {
+    margin: 3rem;
+}
+
+.qs-title {
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--headline);
+    font-size: 24px;
+    margin: 2rem 1rem;
+    letter-spacing: 3px;
+}
+
+.qs-body {
+    width: 90vw;
+    max-width: 600px;
+}
+
+.q {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+
+.q-header {
+    color: var(--paragraph);
+    font-size: 12px;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.q-btn {
+    border: none;
+    background-color: var(--white);
+    cursor: pointer;
+    color: var(--headline);
+    font-size: 20px;
+}
+
+.q-btn:hover {
+    color: var(--button);
+}
+
+.minus-icon {
+    display: none;
+}
+
+.show-elem .minus-icon,
+.show-elem .q-text {
+    display: block;
+}
+
+.show-elem .plus-icon {
+    display: none;
+}
+
+.q-text {
+    display: none;
+    color: var(--paragraph);
+    border-top: 1px solid var(--paragraph);
+    padding: 1rem 0;
+}
+
